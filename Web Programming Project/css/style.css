@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --s1: 40px;
+    --s2: 30px;
+    --s3: 18px;
+    --s4: 16px;
+    --primary-color: #2A333F;
+}
+
+h1{
+    font-size: var(--s1);
+    font-family: 'Koulen', cursive;
+}
+
+p{
+    font-size: var(--s3);
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../img/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-lists{
+    display: flex;
+}
+
+.nav-lists .nav-list{
+    margin-right: 10px;
+}
+
+.header .brand{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: var(--s3);
+}
+
+.table{
+    background-image: url(../img/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+.table.flat{
+    border-radius: 0;
+}
+
+.table.flat.border-bottom .table-list{
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.table.flat .table-list{
+    border-bottom: none;
+}
+
+.table-list{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.table-list table{
+    color: #fff;
+    width: 100%;
+}
+
+.table-list table th, .table-list table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.table-list table th{
+    font-size: var(--s3);
+}
+
+.table-list table td{
+    font-size: var(--s4);
+}
+
+.table-list table .idx{
+    font-size: var(--s4);
+    font-family: 'Koulen', cursive;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.table-link{
+    font-size: var(--s3);
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.tabs{
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    z-index: 111;
+    margin-bottom: -1px;
+}
+
+.tabs .tab{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Koulen', cursive;
+    font-size: var(--s2);
+    border: solid 1px var(--primary-color);
+    border-bottom: none;
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.tabs .tab.active{
+    background-color: var(--primary-color);
+    color: #fff;
+    flex-grow: 1.2;
+}
+
+/* .tabs .tab:last-child.active{
+    margin-left: 20px;
+}
+
+.tabs .tab.active{
+    margin-right: 20px;
+} */
+
+.table-report{
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: none;
+}
+
+.table-report.show{
+    display: block;
+}
+
+.fixture-table{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.fixture-table .team-1 h2{
+    font-family: 'Koulen', cursive;
+    letter-spacing: 2px;
+}
+
+.fixture-table .team-2 h2{
+    font-family: 'Koulen', cursive;
+    letter-spacing: 2px;
+}
+
+.fixture-table .details{
+    text-align: center;
+}
+
+.fixture-table .time, .fixture-table .result{
+    font-family: 'Koulen', cursive;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

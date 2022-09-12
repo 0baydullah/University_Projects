@@ -1,0 +1,61 @@
+.vertical-menu{
+    min-height: 100vh;
+    background-color: #000;
+    padding-top: 50px;
+}
+
+.vertical-menu .nav .nav-item .nav-link{
+    font-size: 20px;
+    color: #fff;
+}
+
+.alert-box{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    max-width: 500px;
+    transform: translateY(-50%);
+    /* animation-name: hide;
+    animation-duration: 3s;
+    display: hide; */
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+option.selected{
+    position: relative;
+}
+
+option.selected::after{
+    position: absolute;
+    display: inline-block;
+    content: "\f00c";
+    font: normal normal normal 14px/1 FontAwesome;
+    right: 10px;
+}
+
+/* @keyframes hide{
+    0%{
+        display: block;
+    }
+    80%{
+        display: block;
+    }
+    95%{
+        display: block;
+        transform: scale(0);
+    }
+    100%{
+        display: none;
+    }
+} */
