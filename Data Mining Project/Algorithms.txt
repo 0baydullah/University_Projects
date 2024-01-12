@@ -1,0 +1,3 @@
+D:SVM -----> kernel='linear'
+H:LogisticRegression
+P:SVM -----> kernel='linear'
